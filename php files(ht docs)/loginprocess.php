@@ -27,25 +27,25 @@ if($user) {
     if (($user['Username'] === $username)and($user['Password'] === $password)) {
         // array_push($errors,"Username already exists");
         echo "<script>alert('Login Successful.\\nGo back to the Home Page.')</script>";
-        echo "<script>window.open('http://127.0.0.1:3000/loginpage/loginpage.html','_self')</script>";
+        echo "<script>window.open('http://raunak-garhwal.github.io/loginpage/loginpage.html','_self')</script>";
     }
       
     elseif ($user['Username'] != $username) {
         // array_push($errors,"Incorrect Password");
         echo "<script>alert('Incorrect Username')</script>";
-        echo "<script>window.open('http://127.0.0.1:3000/loginform/loginform.html','_self')</script>";
+        echo "<script>window.open('http://raunak-garhwal.github.io/loginform/loginform.html','_self')</script>";
     }
     
     elseif ($user['Password'] != $password) {
         // array_push($errors,"Incorrect Username");
         echo "<script>alert('Incorrect Password')</script>";
-        echo "<script>window.open('http://127.0.0.1:3000/loginform/loginform.html','_self')</script>";
+        echo "<script>window.open('http://raunak-garhwal.github.io/loginform/loginform.html','_self')</script>";
     }
     
 }
 else {
     echo "<script>alert('Note : You have not registered with TravelU.\\nPlease Register yourself first.')</script>";
-    echo "<script>window.open('http://127.0.0.1:3000/registrationform/registrationform.html','_self')</script>";
+    echo "<script>window.open('http://raunak-garhwal.github.io/registrationform/registrationform.html','_self')</script>";
 }
 mysqli_close($conn);
 ?>

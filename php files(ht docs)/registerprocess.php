@@ -27,27 +27,27 @@ if(isset($_POST['register'])){
         if (($user['Username'] === $fullname)AND($user['E-mail'] === $email)AND($user['Password'] === $password)AND($user['Mobile_no.'] === $mobileno)) {
             array_push($errors,"Username already exists");
             echo "<script>alert('You are already registered.\\nYou just need to login yourself.')</script>";
-            echo "<script>window.open('http://127.0.0.1:3000/loginform/loginform.html','_self')</script>";
+            echo "<script>window.open('http://raunak-garhwal.github.io/loginform/loginform.html','_self')</script>";
         }
         if ($user['Username'] === $fullname) {
             array_push($errors,"Username already exists");
             echo "<script>alert('Username already exists.')</script>";
-            echo "<script>window.open('http://127.0.0.1:3000/registrationform/registrationform.html','_self')</script>";
+            echo "<script>window.open('http://raunak-garhwal.github.io/registrationform/registrationform.html','_self')</script>";
         }
         if ($user['E-mail'] === $email) {
             array_push($errors,"E-mail already exists");
             echo "<script>alert('Email already exists.')</script>";
-            echo "<script>window.open('http://127.0.0.1:3000/registrationform/registrationform.html','_self')</script>";
+            echo "<script>window.open('http://raunak-garhwal.github.io/registrationform/registrationform.html','_self')</script>";
         }
         if ($user['Password'] === $password) {
             array_push($errors,"Password already exists");
             echo "<script>alert('Password already exists.')</script>";
-            echo "<script>window.open('http://127.0.0.1:3000/registrationform/registrationform.html','_self')</script>";
+            echo "<script>window.open('http://raunak-garhwal.github.io/registrationform/registrationform.html','_self')</script>";
         }
         if ($user['Mobile_no.'] === $mobileno) {
             array_push($errors,"Mobile_no. already exists");
             echo "<script>alert('Mobile_no. already exists.')</script>";
-            echo "<script>window.open('http://127.0.0.1:3000/registrationform/registrationform.html','_self')</script>";
+            echo "<script>window.open('http://raunak-garhwal.github.io/registrationform/registrationform.html','_self')</script>";
         }
     }
 
@@ -59,7 +59,7 @@ if(isset($_POST['register'])){
         if ($result)
         {
             echo "<script>alert('Congratulations, You have successfully registered with TravelU.\\nPlease Login to Continue.')</script>";
-            echo "<script>window.open('http://127.0.0.1:3000/loginform/loginform.html','_self')</script>";
+            echo "<script>window.open('http://raunak-garhwal.github.io/loginform/loginform.html','_self')</script>";
             exit();   
         }
     

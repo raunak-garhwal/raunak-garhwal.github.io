@@ -74,7 +74,7 @@ if (isset($_POST['register'])) {
         $result = mysqli_stmt_execute($stmt);
 
         if ($result) {
-            echo "<script>alert('Registration successful. Please login.'); window.location.href = 'http://raunak-garhwal.github.io/loginform/loginform.html';</script>";
+            echo "<script>alert('Congratulations, You have successfully registered with TravelU.\\nPlease Login to Continue.'); window.location.href = 'http://raunak-garhwal.github.io/loginform/loginform.html';</script>";
         } else {
             echo "Error: " . mysqli_error($conn);
         }

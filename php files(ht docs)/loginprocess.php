@@ -28,7 +28,7 @@ if (isset($_POST['login'])) {
     if ($user) {
         // Verify plain text password
         if ($password === $user['Password']) {
-            echo "<script>alert('Login Successful.'); window.location.href = 'http://raunak-garhwal.github.io/loginpage/loginpage.html';</script>";
+            echo "<script>alert('Login Successful.\\nRedirecting to the Home Page.'); window.location.href = 'http://raunak-garhwal.github.io/loginpage/loginpage.html';</script>";
         } else {
             echo "<script>alert('Incorrect Password'); window.location.href = 'http://raunak-garhwal.github.io/loginform/loginform.html';</script>";
         }

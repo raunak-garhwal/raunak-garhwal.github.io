@@ -251,6 +251,7 @@ footer div{
   font-weight: 600;
 }
 .navbar a{
+  font-size: 18px;
   color: white;
   text-decoration: none;
   padding: 2px;
